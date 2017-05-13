@@ -57,7 +57,7 @@ def s_to_timestamp(time_s):
     :param time_s time in seconds:
     :return:
     """
-    hours = time_s / 3600
+    hours = int(time_s / 3600)
     if hours < 1:
         hours = 0
     minutes = int(time_s / 60)
